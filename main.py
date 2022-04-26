@@ -76,11 +76,11 @@ def plot():
     plot = px.line(last_data_ticker, y="Profit")
     return plot
 
-plot = plot()
+last_plot = plot()
 
 #last_data_ticker
 #data_max 
 #data_min
 #profit_avg
-#plot
+#last_plot
 
