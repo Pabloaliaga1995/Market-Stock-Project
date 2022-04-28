@@ -23,10 +23,16 @@ def total_ticker_data():
     ticker_data = pd.DataFrame()
     for i in ticker:
         data = wb.DataReader(ticker , "yahoo")[[ "High","Low"]]
-        ticker_data["High"] = data["High"].round(2)
-        ticker_data["Low"] = data["Low"].round(2)
+        ticker_data["High"] = data["High"]
+        ticker_data["High"] = ticker_data["High"].round(2)
+        ticker_data["Low"] = data["Low"]
+        ticker_data["Low"] = ticker_data["Low"].round(2)
         ticker_data["Profit"] = ((ticker_data["High"] - ticker_data["Low"])/(ticker_data["High"]))*100
         ticker_data["Profit"] = ticker_data["Profit"].round(2)
+        ticker_data = ticker_data.reset_index()
+        ticker_data['Date'] = pd.to_datetime(ticker_data['Date'])
+        ticker_data['Date'] = ticker_data['Date'].dt.strftime('%d/%m/%Y')
+        ticker_data = ticker_data.set_index("Date")
         ticker_data.to_csv("Data/Total_Ticker_info.csv")
         
     return ticker_data
@@ -37,10 +43,16 @@ def last_ticker_data():
     ticker_data = pd.DataFrame()
     for i in ticker:
         data = wb.DataReader(ticker , "yahoo")[[ "High","Low"]]
-        ticker_data["High"] = data["High"].round(2)
-        ticker_data["Low"] = data["Low"].round(2)
+        ticker_data["High"] = data["High"]
+        ticker_data["High"] = ticker_data["High"].round(2)
+        ticker_data["Low"] = data["Low"]
+        ticker_data["Low"] = ticker_data["Low"].round(2)
         ticker_data["Profit"] = ((ticker_data["High"] - ticker_data["Low"])/(ticker_data["High"]))*100
         ticker_data["Profit"] = ticker_data["Profit"].round(2)
+        ticker_data = ticker_data.reset_index()
+        ticker_data['Date'] = pd.to_datetime(ticker_data['Date'])
+        ticker_data['Date'] = ticker_data['Date'].dt.strftime('%d/%m/%Y') 
+        ticker_data = ticker_data.set_index("Date")
         last_data_ticker = ticker_data.tail(7)
         last_data_ticker.to_csv("Data/Last_Ticker_info.csv")
     
