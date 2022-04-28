@@ -12,7 +12,7 @@ def tickers_read():
 
 #Función con la cual, introduciendo el nombre de la empresa, te saque el ticker para insertarlo en la siguiente función
 def ticker():
-    ticker = str(input("Introduzca el nombre de la empresa que desee buscar "))
+    ticker = st.sidebar.selectbox("Seleccione una empresa", tickers["Name"])
     ticker = tickers.loc[tickers["Name"]== ticker, "Ticker"]
     return ticker
 
@@ -71,12 +71,6 @@ def plot():
     return plot
 
 
-#last_data_ticker
-#data_max 
-#data_min
-#profit_avg
-#last_plot
-
 if __name__ == "__main__":
     tickers = tickers_read()
     ticker = ticker()
@@ -91,7 +85,7 @@ if __name__ == "__main__":
     #Streamfresh
     st.title("Market Stock Project")
     st.sidebar.header('Select Company you are looking for!')
-    selector = st.sidebar.selectbox("Seleccione una empresa", tickers["Name"])
+    keys = tickers["Name"]
     st.image("https://static1.diariosur.es/www/pre2017/multimedia/RC/201412/29/media/cortadas/lobo-wall-street--320x378.jpg")
     st.dataframe(last_data_ticker)
     st.metric(label="Maximum", value = data_max)
