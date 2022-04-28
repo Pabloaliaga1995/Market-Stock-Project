@@ -17,7 +17,6 @@ def ticker():
     return ticker
 
 
-
 #Función para que, a través del ticker obtenido, te saque los datos totales desde 2017
 def total_ticker_data():
     ticker_data = pd.DataFrame()
@@ -100,11 +99,15 @@ if __name__ == "__main__":
     st.sidebar.header('Select Company you are looking for!')
     st.image("https://static1.diariosur.es/www/pre2017/multimedia/RC/201412/29/media/cortadas/lobo-wall-street--320x378.jpg")
     st.header('Dataframe from the last 7 days')
-    st.dataframe(last_data_ticker)
-    st.metric(label="Maximum", value = data_max)
-    st.metric(label="Minimum", value= data_min)
-    st.metric(label = "Profit Average", value = profit_avg)
+    st.table(last_data_ticker)
+    st.text("Guardado en CSV")
+    st.header('Relevant Metrics')
+    col1, col2, col3 = st.columns(3)
+    col1.metric(label="Maximum", value = data_max)
+    col2.metric(label="Minimum", value= data_min)
+    col3.metric(label = "Profit Average", value = profit_avg)
     st.header('Profit Plot')
     st.plotly_chart(last_plot, use_container_width=True)
+    st.balloons()
 
 
