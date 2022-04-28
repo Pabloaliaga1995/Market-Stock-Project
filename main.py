@@ -23,10 +23,10 @@ def total_ticker_data():
     ticker_data = pd.DataFrame()
     for i in ticker:
         data = wb.DataReader(ticker , "yahoo")[[ "High","Low"]]
-        ticker_data["High"] = data["High"]
-        ticker_data["Low"] = data["Low"]
+        ticker_data["High"] = data["High"].round(2)
+        ticker_data["Low"] = data["Low"].round(2)
         ticker_data["Profit"] = ((ticker_data["High"] - ticker_data["Low"])/(ticker_data["High"]))*100
-        last_data_ticker = ticker_data.tail(7)
+        ticker_data["Profit"] = ticker_data["Profit"].round(2)
         ticker_data.to_csv("Data/Total_Ticker_info.csv")
         
     return ticker_data
@@ -37,9 +37,10 @@ def last_ticker_data():
     ticker_data = pd.DataFrame()
     for i in ticker:
         data = wb.DataReader(ticker , "yahoo")[[ "High","Low"]]
-        ticker_data["High"] = data["High"]
-        ticker_data["Low"] = data["Low"]
+        ticker_data["High"] = data["High"].round(2)
+        ticker_data["Low"] = data["Low"].round(2)
         ticker_data["Profit"] = ((ticker_data["High"] - ticker_data["Low"])/(ticker_data["High"]))*100
+        ticker_data["Profit"] = ticker_data["Profit"].round(2)
         last_data_ticker = ticker_data.tail(7)
         last_data_ticker.to_csv("Data/Last_Ticker_info.csv")
     
@@ -85,12 +86,13 @@ if __name__ == "__main__":
     #Streamfresh
     st.title("Market Stock Project")
     st.sidebar.header('Select Company you are looking for!')
-    keys = tickers["Name"]
     st.image("https://static1.diariosur.es/www/pre2017/multimedia/RC/201412/29/media/cortadas/lobo-wall-street--320x378.jpg")
+    st.header('Dataframe from the last 7 days')
     st.dataframe(last_data_ticker)
     st.metric(label="Maximum", value = data_max)
     st.metric(label="Minimum", value= data_min)
     st.metric(label = "Profit Average", value = profit_avg)
+    st.header('Profit Plot')
     st.plotly_chart(last_plot, use_container_width=True)
 
 
