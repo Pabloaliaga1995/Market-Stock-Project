@@ -41,7 +41,7 @@ CSV SAVED
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
 
 
-## :file_folder: **Folder structure**
+## :file_folder: **FOLDER STRUCTURE**
 ```
 └── project
     ├── Api Connection
@@ -63,7 +63,7 @@ CSV SAVED
     └── README.md
 ```
 
-### :incoming_envelope: **Contact info**
+### :incoming_envelope: **CONTACT INFO**
 If you have any question, please contact me! (Pabloaliaga1995@hotmail.com)
 
 
@@ -108,7 +108,7 @@ CSV SAVED
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
 
 
-## :file_folder: **Folder structure**
+## :file_folder: **FOLDER STRUCTURE**
 ```
 └── project
     ├── Api Connection
@@ -130,5 +130,5 @@ CSV SAVED
     └── README.md
 ```
 
-### :incoming_envelope: **Contact info**
+### :incoming_envelope: **CONTACT INFO**
 Para cualquier cuestión adicional, por favor contactad! (Pabloaliaga1995@hotmail.com)
