@@ -18,7 +18,7 @@ ENG
 - Requests(conda install requests)
 
 
-## CODE :chart_with_downwards_trend: :mag:
+## :chart_with_downwards_trend: :mag: **CODE**
 - Create a database from the tickers through Yahoo Finance API in order to obtain the required data and clean it.
 - After having the data, we start working on functions.
 - The first function is the one for reading the file where we have the tickers.
