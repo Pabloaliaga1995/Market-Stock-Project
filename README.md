@@ -85,7 +85,7 @@ ESP
 - Requests (conda install requests)
 
 
-## CODE :chart_with_downwards_trend: :mag:
+## :chart_with_downwards_trend: :mag: **CODE**
 - Crear una base de datos a través de la API de Yahoo Finance, para poder obtener los datos necesarios y limpiarlos.
 - Una vez tenemos los datos, empezamos a trabajar en las funciones.
 - La primera función es para leer fichero donde tenemos los tickers.
@@ -128,7 +128,7 @@ CSV SAVED
     │   └── Finance_functions.ipynb
     ├── main.py
     └── README.md
-    ```
+```
 
 ### :incoming_envelope: **Contact info**
-If you have any question, please contact me! (Pabloaliaga1995@hotmail.com)
+Para cualquier cuestión adicional, por favor contactad! (Pabloaliaga1995@hotmail.com)
