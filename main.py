@@ -18,7 +18,7 @@ def ticker():
     return ticker
 
 
-#Función para que, a través del ticker obtenido, te saque los datos totales desde 2017
+#Función para que, a través del ticker obtenido, te saque los datos totales desde 2017 y calcular parámetros
 def total_ticker_data():
     ticker_data = pd.DataFrame()
     for i in ticker:
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     st.plotly_chart(last_plot, use_container_width=True)
     st.balloons()
 
-    components.iframe("https://www.expansion.com/mercados/indices.html", height= 1000, width= 1000, scrolling = True)
+    components.iframe("https://www.wsj.com/market-data?mod=Markets_MDW_MDC", height= 1000, width= 1000, scrolling = True)
 
 
 
