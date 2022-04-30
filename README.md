@@ -1,6 +1,6 @@
 # :bar_chart: **Market Stock Project**
 
-<img src="https://www.nasdaq.com/sites/acquia.prod/files/image/29525db076bcc42505a356e55dbe94f38b28530b_getty-stock-market-data.jpg"  width = 700   alt="PROJECT LOGO"/>
+<img src="https://smartgridspain.org/web/wp-content/uploads/2021/05/Bolsa_mercado_valores_istockphoto-943292690.jpg"  width = 700   alt="PROJECT LOGO"/>
 
 ENG
 
@@ -61,7 +61,7 @@ CSV SAVED
     │   └── Finance_functions.ipynb
     ├── main.py
     └── README.md
-
+```
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ESP
@@ -124,5 +124,7 @@ CSV SAVED
     │   └── Finance_functions.ipynb
     ├── main.py
     └── README.md
+    ```
+
 
 
