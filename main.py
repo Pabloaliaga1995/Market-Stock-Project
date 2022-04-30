@@ -95,13 +95,13 @@ if __name__ == "__main__":
     last_plot = plot()
 
 
-    #Streamfresh
+    #Streamlit
     st.title("Market Stock Project")
     st.sidebar.header('Select Company you are looking for!')
     st.image("https://frankblackhal.files.wordpress.com/2016/05/o-the-wolf-of-wall-street-facebook.jpg")
     st.header('Dataframe from the last 7 days')
     st.table(last_data_ticker)
-    st.text("Guardado en CSV")
+    st.text("Saved in CSV")
     st.header('Relevant Metrics')
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Maximum", value = data_max)
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     st.header('Profit Plot')
     st.plotly_chart(last_plot, use_container_width=True)
     st.balloons()
-
+    st.header('Wall Street Journal Frame')
     components.iframe("https://www.wsj.com/market-data?mod=Markets_MDW_MDC", height= 1000, width= 1000, scrolling = True)
 
 
