@@ -3,6 +3,7 @@ import pandas_datareader.data as wb
 import yfinance as yf
 import plotly.express as px
 import streamlit as st
+import streamlit.components.v1 as components
 
 #En primer lugar, hacemos una función para leer el archivo en el que tenemos los tickers
 def tickers_read():
@@ -86,7 +87,7 @@ def plot():
 if __name__ == "__main__":
     tickers = tickers_read()
     ticker = ticker()
-    total_ticker_data = total_ticker_data()
+    total_ticker_data1 = total_ticker_data()
     last_data_ticker = last_ticker_data()
     data_max = last_data_max()
     data_min = last_data_min()
@@ -97,7 +98,7 @@ if __name__ == "__main__":
     #Streamfresh
     st.title("Market Stock Project")
     st.sidebar.header('Select Company you are looking for!')
-    st.image("https://static1.diariosur.es/www/pre2017/multimedia/RC/201412/29/media/cortadas/lobo-wall-street--320x378.jpg")
+    st.image("https://frankblackhal.files.wordpress.com/2016/05/o-the-wolf-of-wall-street-facebook.jpg")
     st.header('Dataframe from the last 7 days')
     st.table(last_data_ticker)
     st.text("Guardado en CSV")
@@ -109,5 +110,9 @@ if __name__ == "__main__":
     st.header('Profit Plot')
     st.plotly_chart(last_plot, use_container_width=True)
     st.balloons()
+
+    components.iframe("https://www.expansion.com/mercados/indices.html", height= 1000, width= 1000, scrolling = True)
+
+
 
 
