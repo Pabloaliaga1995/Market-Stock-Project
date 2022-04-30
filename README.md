@@ -4,11 +4,11 @@
 
 ENG
 
-### OBJECTIVES
+## :running: **OBJECTIVES**
 - Get a dataframe with the relevant metrics of the choose Stock Market Value for the selected period of time. This dataframe would be saved in our folder(Data) by csv.
 - Streamlit which shows our dataframe, relevant metrics and plotting the profitability.
 
-### :computer: **ENV**
+## :computer: **ENV**
 - Python 3.7 (conda install python == 3.7)
 - Pandas (conda install pandas)
 - Numpy (conda install numpy)
@@ -41,7 +41,7 @@ CSV SAVED
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
 
 
-# :file_folder: **Folder structure**
+## :file_folder: **Folder structure**
 ```
 └── project
     ├── Api Connection
@@ -63,15 +63,19 @@ CSV SAVED
     └── README.md
 ```
 
+### :incoming_envelope: **Contact info**
+If you have any question, please contact me! (Pabloaliaga1995@hotmail.com)
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ESP
 
-### OBJETIVOS
+## :running: **OBJETIVOS**
 
 - Obtener un dataframe con las métricas relevantes del valor bursátil elegido para el periodo de tiempo seleccionado. Este dataframe se guardaría en nuestra carpeta(Data) por csv.
 - Streamlit que muestra nuestro dataframe, las métricas relevantes y un gráfico de la rentabilidad.
 
-### :computer: **ENV**
+## :computer: **ENV**
 - Python 3.7 (conda install python == 3.7)
 - Pandas (conda install pandas)
 - Numpy (conda install numpy)
@@ -104,7 +108,7 @@ CSV SAVED
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
 
 
-# :file_folder: **Folder structure**
+## :file_folder: **Folder structure**
 ```
 └── project
     ├── Api Connection
@@ -126,5 +130,5 @@ CSV SAVED
     └── README.md
     ```
 
-
-
+### :incoming_envelope: **Contact info**
+If you have any question, please contact me! (Pabloaliaga1995@hotmail.com)
