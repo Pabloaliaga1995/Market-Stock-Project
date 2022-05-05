@@ -85,7 +85,7 @@ ESP
 - Requests (conda install requests)
 
 
-## :chart_with_downwards_trend: :mag: **CODE**
+## :chart_with_downwards_trend: :mag: **CODIGO**
 - Crear una base de datos a través de la API de Yahoo Finance, para poder obtener los datos necesarios y limpiarlos.
 - Una vez tenemos los datos, empezamos a trabajar en las funciones.
 - La primera función es para leer fichero donde tenemos los tickers.
@@ -108,7 +108,7 @@ CSV SAVED
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
 
 
-## :file_folder: **FOLDER STRUCTURE**
+## :file_folder: **ESTRUCTURA DE CARPETAS**
 ```
 └── project
     ├── Api Connection
@@ -130,5 +130,5 @@ CSV SAVED
     └── README.md
 ```
 
-### :incoming_envelope: **CONTACT INFO**
+### :incoming_envelope: **CONTACTO**
 Para cualquier cuestión adicional, por favor contactad! (Pabloaliaga1995@hotmail.com)
