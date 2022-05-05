@@ -85,7 +85,7 @@ ESP
 - Requests (conda install requests)
 
 
-## :chart_with_downwards_trend: :mag: **CODIGO**
+## :chart_with_downwards_trend: :mag: **CÓDIGO**
 - Crear una base de datos a través de la API de Yahoo Finance, para poder obtener los datos necesarios y limpiarlos.
 - Una vez tenemos los datos, empezamos a trabajar en las funciones.
 - La primera función es para leer fichero donde tenemos los tickers.
@@ -102,7 +102,7 @@ ESP
 streamlit run main.py
 ```
 
-CSV SAVED
+CSV
 --------------------------------------
 - Documents/ironhack/Market-Stock-Project/Data/Last_Ticker_info.csv)
 - Documents/ironhack/Market-Stock-Project/Data/Total_Ticker_info.csv)
