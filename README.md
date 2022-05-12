@@ -1,4 +1,4 @@
-# :bar_chart: **Market Stock Project**
+# :bar_chart: **Stock Market Project**
 
 <img src="https://smartgridspain.org/web/wp-content/uploads/2021/05/Bolsa_mercado_valores_istockphoto-943292690.jpg"  width = 700   alt="PROJECT LOGO"/>
 
